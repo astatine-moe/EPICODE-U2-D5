@@ -1,0 +1,91 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Team Generator</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Team Generator</h1>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="col controls">
+                    <form id="team">
+                        <div class="form-control">
+                            <label for="name">Add Member</label>
+                            <div class="input-button">
+                                <input
+                                    type="text"
+                                    placeholder="Name"
+                                    name="name"
+                                    id="new-member-name"
+                                />
+                                <button id="add-member">Add</button>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="teams">Teams</label>
+                            <div class="number-switch">
+                                <button
+                                    type="button"
+                                    class="minus"
+                                    id="decrease-amount"
+                                >
+                                    -
+                                </button>
+                                <input
+                                    type="number"
+                                    name="teams"
+                                    value="0"
+                                    id="team-count"
+                                />
+                                <button
+                                    type="button"
+                                    class="plus"
+                                    id="increase-amount"
+                                >
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="member-list">
+                        <ul id="members">
+                            <!-- <li class="member">
+                                <span class="name">John Doe</span>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="buttons">
+                        <button>Assign Member</button>
+                        <button class="danger">Reset</button>
+                    </div>
+                </div>
+
+                <div class="col teams">
+                    <!-- <div class="team">
+                        <h2>Team 1</h2>
+                        <div class="member-list">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <h2>Team 2</h2>
+                        <div class="member-list">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
